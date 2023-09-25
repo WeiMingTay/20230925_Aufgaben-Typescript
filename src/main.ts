@@ -34,14 +34,15 @@ if (age > 18) {
 
 // Schritt 4: Deklariert eine Variable 'score' vom Typ 'number' und weist ihr den Wert 0 zu.
 let score: number = 0
+
 // Schritt 5: Nutzt eine 'if'-Anweisung, um zu überprüfen, ob 'score' einen Wert hat.
 /*if (score === 0) {
 
 } else {
     console.log("Score ist verfügbar")
 }*/
-// Schritt 6: Nutzt eine 'if-else'-Anweisung, um zu überprüfen, ob 'score' als 'truthy' Wert ausgewertet wird.
 
+// Schritt 6: Nutzt eine 'if-else'-Anweisung, um zu überprüfen, ob 'score' als 'truthy' Wert ausgewertet wird.
 if (score) {
     console.log("Score wird als truthy ausgewertet.")
 }
@@ -53,6 +54,7 @@ let username: string = ''
 if (username) {
     console.log("Username ist verfügbar: " + username)
 }
+
 // Schritt 9: Nutzt eine 'if-else'-Anweisung, um zu überprüfen, ob 'username' als 'falsy' Wert ausgewertet wird.
 if (!username) {
     console.log("Username wird als falsy ausgewertet.")
@@ -67,3 +69,31 @@ if (isAdmin) {
 } else {
     console.log("isAdmin ist false.")
 }
+
+function printChristmasTree(n: number) {
+    for (let i = 1; i <= n; i++) {
+        // Leerzeichen für die Einrückung
+        let spaces = ' '.repeat(n - i);
+
+        // Sterne für die Baumspitze und Zweige
+        let stars = '*'.repeat(2 * i - 1);
+
+        // Ausgabe von Leerzeichen und Sternen
+        console.log(spaces + stars);
+    }
+
+    // Ausgabe des Baumstamms
+
+    let stamm;
+    (n > 5) ? stamm = 5 : stamm = n;
+
+    for (let i = 1; i <= stamm; i++) {
+        let trunkSpaces = ' '.repeat(n - 1);
+        console.log((trunkSpaces + '*'));
+
+    }
+}
+
+const n = 14;
+
+printChristmasTree(n);

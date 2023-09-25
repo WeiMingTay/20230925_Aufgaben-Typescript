@@ -24,3 +24,17 @@
 13. Bitte poste hier den Link eines GitHub-Repos, in dem Ihr diese Aufgabe gemeinsam gelöst habt.
 > 
 ## Bonus Aufgaben
+1. Schreibt einen code, der eine Zahl n akzeptiert und einen Weihnachtsbaum mit den folgenden Mustern ausgibt n = 5:
+```
+    *
+   ***
+  *****
+ *******
+*********
+    *
+    *
+    *
+    *
+    * 
+```
+
