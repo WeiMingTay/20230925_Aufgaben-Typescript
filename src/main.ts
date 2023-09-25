@@ -70,13 +70,14 @@ if (isAdmin) {
     console.log("isAdmin ist false.")
 }
 
-function printChristmasTree(n: number) {
+function printChristmasTree(n: number, s: string, st: string) {
+
     for (let i = 1; i <= n; i++) {
         // Leerzeichen für die Einrückung
         let spaces = ' '.repeat(n - i);
 
         // Sterne für die Baumspitze und Zweige
-        let stars = '*'.repeat(2 * i - 1);
+        let stars = s.repeat(2 * i - 1);
 
         // Ausgabe von Leerzeichen und Sternen
         console.log(spaces + stars);
@@ -85,15 +86,13 @@ function printChristmasTree(n: number) {
     // Ausgabe des Baumstamms
 
     let stamm;
-    (n > 5) ? stamm = 5 : stamm = n;
+    n > 5 ? stamm = 5 : stamm = n;
 
     for (let i = 1; i <= stamm; i++) {
         let trunkSpaces = ' '.repeat(n - 1);
-        console.log((trunkSpaces + '*'));
+        console.log((trunkSpaces + st));
 
     }
 }
 
-const n = 14;
-
-printChristmasTree(n);
+printChristmasTree(6, "°", "|");
