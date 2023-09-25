@@ -15,7 +15,7 @@ function funktionName(name: string, age: number): string {
 
 // console.log(funktionName(name1, age1))
 
-console.log("=== Aufgabe ===")
+console.log("%c=== Aufgabe ===", "color: darkred")
 
 // Schritt 1: Deklariert eine Variable vom Typ 'number' mit dem Namen 'age' und weist ihr einen Wert zu.
 let age: number = 23
@@ -71,7 +71,6 @@ if (isAdmin) {
 }
 
 function printChristmasTree(n: number, s: string, st: string) {
-
     for (let i = 1; i <= n; i++) {
         // Leerzeichen für die Einrückung
         let spaces = ' '.repeat(n - i);
@@ -80,7 +79,7 @@ function printChristmasTree(n: number, s: string, st: string) {
         let stars = s.repeat(2 * i - 1);
 
         // Ausgabe von Leerzeichen und Sternen
-        console.log(spaces + stars);
+        console.log("%c"+spaces + stars, "color: green; font-size: 15px");
     }
 
     // Ausgabe des Baumstamms
@@ -90,9 +89,9 @@ function printChristmasTree(n: number, s: string, st: string) {
 
     for (let i = 1; i <= stamm; i++) {
         let trunkSpaces = ' '.repeat(n - 1);
-        console.log((trunkSpaces + st));
+        console.log("%c"+trunkSpaces + st, "color: brown; font-size: 15px");
 
     }
 }
 
-printChristmasTree(6, "°", "|");
+printChristmasTree(10, "°", "#");
